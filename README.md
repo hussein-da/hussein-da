@@ -6,24 +6,11 @@
 </p>
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/lhussein-daoud/"><img src="https://img.shields.io/badge/LINKEDIN-C724FF?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
-  <a href="mailto:lhussein.daoud@gmail.com"><img src="https://img.shields.io/badge/EMAIL-FF2EA6?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
-  <img src="https://img.shields.io/badge/M%C3%9CLHEIM_%C2%B7_NRW-6D28D9?style=for-the-badge&logoColor=white" alt="Mülheim NRW">
-  <img src="https://komarev.com/ghpvc/?username=hussein-da&label=VISITORS&color=c724ff&style=for-the-badge" alt="Visitors">
+  <a href="https://www.linkedin.com/in/lhussein-daoud/"><img src="https://img.shields.io/badge/LINKEDIN-C724FF?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" height="34"></a>
+  <a href="mailto:lhussein.daoud@gmail.com"><img src="https://img.shields.io/badge/EMAIL-FF2EA6?style=for-the-badge&logo=maildotru&logoColor=white" alt="Email" height="34"></a>
+  <a href="https://www.hochschule-ruhr-west.de/"><img src="https://img.shields.io/badge/HRW_RUHR_WEST-6D28D9?style=for-the-badge&logo=googlescholar&logoColor=white" alt="Hochschule Ruhr West" height="34"></a>
+  <img src="https://komarev.com/ghpvc/?username=hussein-da&label=VISITORS&color=c724ff&style=for-the-badge" alt="Visitors" height="34">
 </p>
-
-## ▸ BUILDS
-
-<!-- TODO: Beschreibungen anpassen — ich habe sie geraten. -->
-
-| | |
-|---|---|
-| **[docu-smart-answer](https://github.com/hussein-da/docu-smart-answer)** · `TypeScript` | Ask your own documents a question — get an answer with sources |
-| **[note-ai-assistant](https://github.com/hussein-da/note-ai-assistant)** · `TypeScript` | Raw notes in, structured searchable knowledge out |
-| **[offline-transcriber](https://github.com/hussein-da/offline-transcriber)** · `Python` | Speech-to-text, fully local — no audio ever leaves the machine |
-| **[smart-home-butler-voice](https://github.com/hussein-da/smart-home-butler-voice)** · `TypeScript` | Voice-controlled smart home with natural language intents |
-
-## ▸ CONTRIBUTION SNAKE
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/hussein-da/hussein-da/output/snake-neon.svg" alt="Contribution snake" />
