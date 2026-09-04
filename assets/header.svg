@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 240" width="1000" height="240" role="img" aria-label="Hussein Daoud — IT Consultant">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#0b0118"/>
+      <stop offset="55%"  stop-color="#170a2e"/>
+      <stop offset="100%" stop-color="#2a0a3a"/>
+    </linearGradient>
+
+    <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#00f0ff"/>
+      <stop offset="50%"  stop-color="#c724ff"/>
+      <stop offset="100%" stop-color="#ff2ea6"/>
+    </linearGradient>
+
+    <linearGradient id="sunset" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#ffe259"/>
+      <stop offset="45%"  stop-color="#ff2ea6"/>
+      <stop offset="100%" stop-color="#c724ff"/>
+    </linearGradient>
+
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <filter id="softglow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <clipPath id="frame"><rect x="0" y="0" width="1000" height="240" rx="10"/></clipPath>
+
+    <pattern id="scan" width="1000" height="4" patternUnits="userSpaceOnUse">
+      <rect width="1000" height="1" y="0" fill="#ffffff" opacity="0.05"/>
+    </pattern>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="1000" height="240" fill="url(#sky)"/>
+
+    <!-- sun, off-centre so it never collides with the text -->
+    <g opacity="0.9">
+      <circle cx="848" cy="176" r="52" fill="url(#sunset)" opacity="0.85"/>
+      <rect x="796" y="162" width="104" height="3" fill="#170a2e"/>
+      <rect x="796" y="171" width="104" height="4" fill="#170a2e"/>
+      <rect x="796" y="182" width="104" height="6" fill="#170a2e"/>
+      <rect x="796" y="196" width="104" height="8" fill="#170a2e"/>
+    </g>
+
+    <!-- horizon glow -->
+    <rect x="0" y="176" width="1000" height="2" fill="#ff2ea6" filter="url(#softglow)" opacity="0.9"/>
+
+    <!-- synthwave grid floor -->
+    <g stroke="#c724ff" stroke-width="1" opacity="0.55">
+      <line x1="-260" y1="240" x2="440" y2="177"/>
+      <line x1="-80"  y1="240" x2="462" y2="177"/>
+      <line x1="90"   y1="240" x2="481" y2="177"/>
+      <line x1="250"  y1="240" x2="494" y2="177"/>
+      <line x1="390"  y1="240" x2="500" y2="177"/>
+      <line x1="610"  y1="240" x2="500" y2="177"/>
+      <line x1="750"  y1="240" x2="506" y2="177"/>
+      <line x1="910"  y1="240" x2="519" y2="177"/>
+      <line x1="1080" y1="240" x2="538" y2="177"/>
+      <line x1="1260" y1="240" x2="560" y2="177"/>
+    </g>
+    <g stroke="#00f0ff" stroke-width="1" opacity="0.4">
+      <line x1="0" y1="182" x2="1000" y2="182"/>
+      <line x1="0" y1="190" x2="1000" y2="190"/>
+      <line x1="0" y1="201" x2="1000" y2="201"/>
+      <line x1="0" y1="215" x2="1000" y2="215"/>
+      <line x1="0" y1="233" x2="1000" y2="233"/>
+    </g>
+
+    <!-- title with glitch layers -->
+    <g font-family="'Courier New',ui-monospace,monospace" font-weight="bold" text-anchor="middle">
+      <text x="500" y="92" font-size="56" letter-spacing="6" fill="#ff2ea6" opacity="0.85" filter="url(#glow)">
+        HUSSEIN DAOUD
+        <animate attributeName="x" values="500;496;503;500;500" dur="3.4s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.85;0.35;0.85;0.85" dur="3.4s" repeatCount="indefinite"/>
+      </text>
+      <text x="500" y="92" font-size="56" letter-spacing="6" fill="#00f0ff" opacity="0.8" filter="url(#glow)">
+        HUSSEIN DAOUD
+        <animate attributeName="x" values="500;504;497;500;500" dur="3.4s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.8;0.3;0.8;0.8" dur="3.4s" repeatCount="indefinite"/>
+      </text>
+      <text x="500" y="92" font-size="56" letter-spacing="6" fill="#ffffff">HUSSEIN DAOUD</text>
+
+      <text x="500" y="124" font-size="15" letter-spacing="5" fill="#00f0ff" filter="url(#softglow)">
+        IT CONSULTANT // HUMAN-TECHNOLOGY INTERACTION
+      </text>
+
+      <text x="500" y="150" font-size="13" letter-spacing="3" fill="#ff2ea6" opacity="0.95">
+        TECH · BUSINESS · DIGITAL HEALTH
+      </text>
+    </g>
+
+    <!-- corner brackets -->
+    <g stroke="url(#neon)" stroke-width="2" fill="none" opacity="0.9">
+      <path d="M14 40 L14 14 L58 14"/>
+      <path d="M986 40 L986 14 L942 14"/>
+      <path d="M14 200 L14 226 L58 226"/>
+      <path d="M986 200 L986 226 L942 226"/>
+    </g>
+
+    <!-- blinking status dot -->
+    <g transform="translate(30,44)">
+      <circle r="4" fill="#39ff14" filter="url(#softglow)">
+        <animate attributeName="opacity" values="1;0.15;1" dur="1.6s" repeatCount="indefinite"/>
+      </circle>
+      <text x="14" y="4" font-family="'Courier New',monospace" font-size="11" letter-spacing="2" fill="#39ff14">ONLINE</text>
+    </g>
+
+    <!-- scanlines + sweep -->
+    <rect width="1000" height="240" fill="url(#scan)"/>
+    <rect x="0" y="-60" width="1000" height="60" fill="#00f0ff" opacity="0.07">
+      <animate attributeName="y" values="-60;240" dur="5s" repeatCount="indefinite"/>
+    </rect>
+
+    <rect x="1" y="1" width="998" height="238" rx="10" fill="none" stroke="url(#neon)" stroke-width="2"/>
+  </g>
+</svg>
