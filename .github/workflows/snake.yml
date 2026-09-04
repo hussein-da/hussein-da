@@ -4,8 +4,12 @@ on:
   schedule:
     - cron: "0 */12 * * *"   # alle 12 Stunden
   workflow_dispatch:          # Button "Run workflow" im Actions-Tab
-  push:
-    branches: [main]
+  # KEIN push-Trigger: sonst startet bei JEDEM Commit ein weiterer Lauf
+  # und die Laeufe stapeln sich in der Queue.
+
+concurrency:
+  group: snake
+  cancel-in-progress: true    # ein neuer Lauf bricht den alten ab
 
 jobs:
   build:
