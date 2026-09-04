@@ -1,121 +1,120 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 240" width="1000" height="240" role="img" aria-label="Hussein Daoud — IT Consultant">
-  <defs>
-    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%"   stop-color="#0b0118"/>
-      <stop offset="55%"  stop-color="#170a2e"/>
-      <stop offset="100%" stop-color="#2a0a3a"/>
-    </linearGradient>
-
-    <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%"   stop-color="#00f0ff"/>
-      <stop offset="50%"  stop-color="#c724ff"/>
-      <stop offset="100%" stop-color="#ff2ea6"/>
-    </linearGradient>
-
-    <linearGradient id="sunset" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%"   stop-color="#ffe259"/>
-      <stop offset="45%"  stop-color="#ff2ea6"/>
-      <stop offset="100%" stop-color="#c724ff"/>
-    </linearGradient>
-
-    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="6" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-
-    <filter id="softglow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="2.5" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-
-    <clipPath id="frame"><rect x="0" y="0" width="1000" height="240" rx="10"/></clipPath>
-
-    <pattern id="scan" width="1000" height="4" patternUnits="userSpaceOnUse">
-      <rect width="1000" height="1" y="0" fill="#ffffff" opacity="0.05"/>
-    </pattern>
-  </defs>
-
-  <g clip-path="url(#frame)">
-    <rect width="1000" height="240" fill="url(#sky)"/>
-
-    <!-- sun, off-centre so it never collides with the text -->
-    <g opacity="0.9">
-      <circle cx="848" cy="176" r="52" fill="url(#sunset)" opacity="0.85"/>
-      <rect x="796" y="162" width="104" height="3" fill="#170a2e"/>
-      <rect x="796" y="171" width="104" height="4" fill="#170a2e"/>
-      <rect x="796" y="182" width="104" height="6" fill="#170a2e"/>
-      <rect x="796" y="196" width="104" height="8" fill="#170a2e"/>
-    </g>
-
-    <!-- horizon glow -->
-    <rect x="0" y="176" width="1000" height="2" fill="#ff2ea6" filter="url(#softglow)" opacity="0.9"/>
-
-    <!-- synthwave grid floor -->
-    <g stroke="#c724ff" stroke-width="1" opacity="0.55">
-      <line x1="-260" y1="240" x2="440" y2="177"/>
-      <line x1="-80"  y1="240" x2="462" y2="177"/>
-      <line x1="90"   y1="240" x2="481" y2="177"/>
-      <line x1="250"  y1="240" x2="494" y2="177"/>
-      <line x1="390"  y1="240" x2="500" y2="177"/>
-      <line x1="610"  y1="240" x2="500" y2="177"/>
-      <line x1="750"  y1="240" x2="506" y2="177"/>
-      <line x1="910"  y1="240" x2="519" y2="177"/>
-      <line x1="1080" y1="240" x2="538" y2="177"/>
-      <line x1="1260" y1="240" x2="560" y2="177"/>
-    </g>
-    <g stroke="#00f0ff" stroke-width="1" opacity="0.4">
-      <line x1="0" y1="182" x2="1000" y2="182"/>
-      <line x1="0" y1="190" x2="1000" y2="190"/>
-      <line x1="0" y1="201" x2="1000" y2="201"/>
-      <line x1="0" y1="215" x2="1000" y2="215"/>
-      <line x1="0" y1="233" x2="1000" y2="233"/>
-    </g>
-
-    <!-- title with glitch layers -->
-    <g font-family="'Courier New',ui-monospace,monospace" font-weight="bold" text-anchor="middle">
-      <text x="500" y="92" font-size="56" letter-spacing="6" fill="#ff2ea6" opacity="0.85" filter="url(#glow)">
-        HUSSEIN DAOUD
-        <animate attributeName="x" values="500;496;503;500;500" dur="3.4s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="0.85;0.35;0.85;0.85" dur="3.4s" repeatCount="indefinite"/>
-      </text>
-      <text x="500" y="92" font-size="56" letter-spacing="6" fill="#00f0ff" opacity="0.8" filter="url(#glow)">
-        HUSSEIN DAOUD
-        <animate attributeName="x" values="500;504;497;500;500" dur="3.4s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="0.8;0.3;0.8;0.8" dur="3.4s" repeatCount="indefinite"/>
-      </text>
-      <text x="500" y="92" font-size="56" letter-spacing="6" fill="#ffffff">HUSSEIN DAOUD</text>
-
-      <text x="500" y="124" font-size="15" letter-spacing="5" fill="#00f0ff" filter="url(#softglow)">
-        IT CONSULTANT // HUMAN-TECHNOLOGY INTERACTION
-      </text>
-
-      <text x="500" y="150" font-size="13" letter-spacing="3" fill="#ff2ea6" opacity="0.95">
-        TECH · BUSINESS · DIGITAL HEALTH
-      </text>
-    </g>
-
-    <!-- corner brackets -->
-    <g stroke="url(#neon)" stroke-width="2" fill="none" opacity="0.9">
-      <path d="M14 40 L14 14 L58 14"/>
-      <path d="M986 40 L986 14 L942 14"/>
-      <path d="M14 200 L14 226 L58 226"/>
-      <path d="M986 200 L986 226 L942 226"/>
-    </g>
-
-    <!-- blinking status dot -->
-    <g transform="translate(30,44)">
-      <circle r="4" fill="#39ff14" filter="url(#softglow)">
-        <animate attributeName="opacity" values="1;0.15;1" dur="1.6s" repeatCount="indefinite"/>
-      </circle>
-      <text x="14" y="4" font-family="'Courier New',monospace" font-size="11" letter-spacing="2" fill="#39ff14">ONLINE</text>
-    </g>
-
-    <!-- scanlines + sweep -->
-    <rect width="1000" height="240" fill="url(#scan)"/>
-    <rect x="0" y="-60" width="1000" height="60" fill="#00f0ff" opacity="0.07">
-      <animate attributeName="y" values="-60;240" dur="5s" repeatCount="indefinite"/>
-    </rect>
-
-    <rect x="1" y="1" width="998" height="238" rx="10" fill="none" stroke="url(#neon)" stroke-width="2"/>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 670" width="1000" height="670" role="img" aria-label="Hussein Daoud — IT Consultant, stack and profile">
+<defs>
+  <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#0b0118"/><stop offset="55%" stop-color="#1a0b33"/><stop offset="100%" stop-color="#330c47"/>
+  </linearGradient>
+  <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#00f0ff"/><stop offset="50%" stop-color="#c724ff"/><stop offset="100%" stop-color="#ff2ea6"/>
+  </linearGradient>
+  <linearGradient id="sunset" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#ffe259"/><stop offset="45%" stop-color="#ff2ea6"/><stop offset="100%" stop-color="#c724ff"/>
+  </linearGradient>
+  <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="7" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="3" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <clipPath id="banclip"><rect x="0" y="0" width="1000" height="300" rx="12"/></clipPath>
+  <pattern id="scan" width="1000" height="4" patternUnits="userSpaceOnUse">
+    <rect width="1000" height="1" fill="#ffffff" opacity="0.05"/>
+  </pattern>
+</defs>
+<rect width="1000" height="670" fill="#0b0118" rx="12"/>
+<g clip-path="url(#banclip)">
+<rect width="1000" height="300" fill="url(#sky)"/>
+<g opacity="0.92"><circle cx="893" cy="238" r="56" fill="url(#sunset)"/>
+<rect x="837" y="226" width="112" height="4" fill="#1a0b33"/>
+<rect x="837" y="238" width="112" height="5" fill="#1a0b33"/>
+<rect x="837" y="252" width="112" height="7" fill="#1a0b33"/>
+<rect x="837" y="268" width="112" height="9" fill="#1a0b33"/>
+</g>
+<rect x="0" y="216" width="1000" height="2.5" fill="#ff2ea6" filter="url(#soft)"/>
+<g stroke="#c724ff" stroke-width="1.2" opacity="0.6">
+<line x1="-380" y1="300" x2="452" y2="217"/>
+<line x1="-180" y1="300" x2="463" y2="217"/>
+<line x1="10" y1="300" x2="473" y2="217"/>
+<line x1="190" y1="300" x2="483" y2="217"/>
+<line x1="350" y1="300" x2="492" y2="217"/>
+<line x1="650" y1="300" x2="508" y2="217"/>
+<line x1="810" y1="300" x2="517" y2="217"/>
+<line x1="990" y1="300" x2="527" y2="217"/>
+<line x1="1180" y1="300" x2="537" y2="217"/>
+<line x1="1380" y1="300" x2="548" y2="217"/>
+</g>
+<g stroke="#00f0ff" stroke-width="1.1" opacity="0.45">
+<line x1="0" y1="223" x2="1000" y2="223"/>
+<line x1="0" y1="232" x2="1000" y2="232"/>
+<line x1="0" y1="245" x2="1000" y2="245"/>
+<line x1="0" y1="263" x2="1000" y2="263"/>
+<line x1="0" y1="288" x2="1000" y2="288"/>
+</g>
+<g font-family="'Courier New',ui-monospace,monospace" font-weight="bold" text-anchor="middle">
+<text x="500" y="120" font-size="72" letter-spacing="7" fill="#ff2ea6" opacity="0.85" filter="url(#glow)">HUSSEIN DAOUD
+  <animate attributeName="x" values="500;495;504;500;500" dur="3.6s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0.85;0.3;0.85;0.85" dur="3.6s" repeatCount="indefinite"/></text>
+<text x="500" y="120" font-size="72" letter-spacing="7" fill="#00f0ff" opacity="0.8" filter="url(#glow)">HUSSEIN DAOUD
+  <animate attributeName="x" values="500;505;496;500;500" dur="3.6s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0.8;0.25;0.8;0.8" dur="3.6s" repeatCount="indefinite"/></text>
+<text x="500" y="120" font-size="72" letter-spacing="7" fill="#ffffff">HUSSEIN DAOUD</text>
+<text x="500" y="160" font-size="17" letter-spacing="4" fill="#00f0ff" filter="url(#soft)">IT CONSULTANT // HUMAN-TECHNOLOGY INTERACTION</text>
+<text x="500" y="190" font-size="16" letter-spacing="4" fill="#ff2ea6">TECH · BUSINESS · DIGITAL HEALTH</text>
+</g>
+<g stroke="url(#neon)" stroke-width="2.5" fill="none" opacity="0.95"><path d="M16 52 L16 16 L70 16"/><path d="M984 52 L984 16 L930 16"/><path d="M16 248 L16 284 L70 284"/><path d="M984 248 L984 284 L930 284"/></g>
+<g transform="translate(38,50)">
+  <circle r="5" fill="#39ff14" filter="url(#soft)"><animate attributeName="opacity" values="1;0.15;1" dur="1.6s" repeatCount="indefinite"/></circle>
+  <text x="16" y="5" font-family="'Courier New',monospace" font-size="13" letter-spacing="2.5" fill="#39ff14">ONLINE</text></g>
+<rect width="1000" height="300" fill="url(#scan)"/>
+<rect x="0" y="-70" width="1000" height="70" fill="#00f0ff" opacity="0.08"><animate attributeName="y" values="-70;300" dur="5.5s" repeatCount="indefinite"/></rect>
+<rect x="1.5" y="1.5" width="997" height="297" rx="12" fill="none" stroke="url(#neon)" stroke-width="3"/>
+</g>
+<g>
+<rect x="1.5" y="328" width="997" height="250" rx="10" fill="#0d0320" stroke="#c724ff" stroke-width="2"/>
+<path d="M1.5 338 a10 10 0 0 1 10 -10 h977 a10 10 0 0 1 10 10 v24 h-997 z" fill="#1c0e37"/>
+<line x1="1.5" y1="362" x2="998.5" y2="362" stroke="#c724ff" stroke-width="1.5" opacity="0.7"/>
+<circle cx="26" cy="345" r="5.5" fill="#ff2ea6"/>
+<circle cx="46" cy="345" r="5.5" fill="#ffc857"/>
+<circle cx="66" cy="345" r="5.5" fill="#39ff14"/>
+<text x="500.0" y="350" text-anchor="middle" font-family="'Courier New',monospace" font-size="13" letter-spacing="2" fill="#8f83b8">hussein@github: ~</text>
+<text x="34" y="394" font-family="'Courier New',monospace" font-size="16" fill="#39ff14"><tspan fill="#ff2ea6">$</tspan> ./whoami --verbose</text>
+<text x="46" y="424" font-family="'Courier New',monospace" font-size="15" fill="#00f0ff">[ role     ]</text>
+<text x="185" y="424" font-family="'Courier New',monospace" font-size="15" fill="#ded9ee">IT Consultant @ adesso</text>
+<text x="46" y="449" font-family="'Courier New',monospace" font-size="15" fill="#00f0ff">[ studying ]</text>
+<text x="185" y="449" font-family="'Courier New',monospace" font-size="15" fill="#ded9ee">M.Sc. Human-Technology Interaction  ·  Hochschule Ruhr West</text>
+<text x="46" y="474" font-family="'Courier New',monospace" font-size="15" fill="#00f0ff">[ before   ]</text>
+<text x="185" y="474" font-family="'Courier New',monospace" font-size="15" fill="#ded9ee">B.Sc. E-Commerce</text>
+<text x="46" y="499" font-family="'Courier New',monospace" font-size="15" fill="#00f0ff">[ focus    ]</text>
+<text x="185" y="499" font-family="'Courier New',monospace" font-size="15" fill="#ded9ee">digital health  ·  AI that survives contact with reality</text>
+<text x="46" y="524" font-family="'Courier New',monospace" font-size="15" fill="#00f0ff">[ approach ]</text>
+<text x="185" y="524" font-family="'Courier New',monospace" font-size="15" fill="#ded9ee">messy process in   ──►   usable product out</text>
+<text x="46" y="549" font-family="'Courier New',monospace" font-size="15" fill="#00f0ff">[ status   ]</text>
+<text x="185" y="549" font-family="'Courier New',monospace" font-size="15" fill="#ded9ee">open to collaboration</text>
+<text x="34" y="580" font-family="'Courier New',monospace" font-size="16" fill="#39ff14"><tspan fill="#ff2ea6">$</tspan> <tspan fill="#39ff14">█</tspan><animate attributeName="opacity" values="1;0.15;1" dur="1.1s" repeatCount="indefinite"/></text>
+</g>
+<text x="500.0" y="596" text-anchor="middle" font-family="'Courier New',monospace" font-size="12" letter-spacing="4" fill="#8f83b8">STACK</text>
+<rect x="40.0" y="608" width="100.0" height="40" rx="6" fill="#160a2b" stroke="#00f0ff" stroke-width="1.6" opacity="0.98"/>
+<text x="90.0" y="633.0" text-anchor="middle" font-family="'Courier New',monospace" font-size="14" font-weight="bold" fill="#00f0ff">TypeScript</text>
+<rect x="150.0" y="608" width="68.0" height="40" rx="6" fill="#160a2b" stroke="#00f0ff" stroke-width="1.6" opacity="0.98"/>
+<text x="184.0" y="633.0" text-anchor="middle" font-family="'Courier New',monospace" font-size="14" font-weight="bold" fill="#00f0ff">Python</text>
+<rect x="228.0" y="608" width="60.0" height="40" rx="6" fill="#160a2b" stroke="#00f0ff" stroke-width="1.6" opacity="0.98"/>
+<text x="258.0" y="633.0" text-anchor="middle" font-family="'Courier New',monospace" font-size="14" font-weight="bold" fill="#00f0ff">React</text>
+<rect x="298.0" y="608" width="76.0" height="40" rx="6" fill="#160a2b" stroke="#00f0ff" stroke-width="1.6" opacity="0.98"/>
+<text x="336.0" y="633.0" text-anchor="middle" font-family="'Courier New',monospace" font-size="14" font-weight="bold" fill="#00f0ff">Next.js</text>
+<rect x="384.0" y="608" width="76.0" height="40" rx="6" fill="#160a2b" stroke="#ff2ea6" stroke-width="1.6" opacity="0.98"/>
+<text x="422.0" y="633.0" text-anchor="middle" font-family="'Courier New',monospace" font-size="14" font-weight="bold" fill="#ff2ea6">Node.js</text>
+<rect x="470.0" y="608" width="100.0" height="40" rx="6" fill="#160a2b" stroke="#ff2ea6" stroke-width="1.6" opacity="0.98"/>
+<text x="520.0" y="633.0" text-anchor="middle" font-family="'Courier New',monospace" font-size="14" font-weight="bold" fill="#ff2ea6">PostgreSQL</text>
+<rect x="580.0" y="608" width="84.0" height="40" rx="6" fill="#160a2b" stroke="#ff2ea6" stroke-width="1.6" opacity="0.98"/>
+<text x="622.0" y="633.0" text-anchor="middle" font-family="'Courier New',monospace" font-size="14" font-weight="bold" fill="#ff2ea6">Supabase</text>
+<rect x="674.0" y="608" width="68.0" height="40" rx="6" fill="#160a2b" stroke="#c724ff" stroke-width="1.6" opacity="0.98"/>
+<text x="708.0" y="633.0" text-anchor="middle" font-family="'Courier New',monospace" font-size="14" font-weight="bold" fill="#c724ff">Docker</text>
+<rect x="752.0" y="608" width="84.0" height="40" rx="6" fill="#160a2b" stroke="#c724ff" stroke-width="1.6" opacity="0.98"/>
+<text x="794.0" y="633.0" text-anchor="middle" font-family="'Courier New',monospace" font-size="14" font-weight="bold" fill="#c724ff">Tailwind</text>
+<rect x="846.0" y="608" width="60.0" height="40" rx="6" fill="#160a2b" stroke="#c724ff" stroke-width="1.6" opacity="0.98"/>
+<text x="876.0" y="633.0" text-anchor="middle" font-family="'Courier New',monospace" font-size="14" font-weight="bold" fill="#c724ff">Figma</text>
+<rect x="916.0" y="608" width="44.0" height="40" rx="6" fill="#160a2b" stroke="#c724ff" stroke-width="1.6" opacity="0.98"/>
+<text x="938.0" y="633.0" text-anchor="middle" font-family="'Courier New',monospace" font-size="14" font-weight="bold" fill="#c724ff">Git</text>
+<rect x="1" y="1" width="998" height="668" rx="12" fill="none" stroke="#c724ff" stroke-width="2" opacity="0.5"/>
 </svg>
